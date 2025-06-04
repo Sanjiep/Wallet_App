@@ -1,10 +1,12 @@
 import express from 'express';
 import 'dotenv/config';
 import { sql } from './config/db.js';
-import { parse } from 'dotenv';
+import ratelimiterMiddleware from './middleware/ratelimiter.js';
 
 const app = express();
+
 app.use(express.json()); // Middleware to parse JSON bodies
+app.use(ratelimiterMiddleware) // Apply rate limiting middleware
 
 const PORT = process.env.PORT || 5001;
 
