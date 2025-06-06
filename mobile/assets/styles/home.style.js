@@ -166,6 +166,7 @@ export const styles = StyleSheet.create({
     flex: 1,
   },
   transactionTitle: {
+    textTransform: "capitalize",
     fontSize: 16,
     fontWeight: "500",
     color: COLORS.text,

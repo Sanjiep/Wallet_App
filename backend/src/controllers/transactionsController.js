@@ -5,7 +5,8 @@ export async function getTransactionsByUserId(req, res) {
         const { user_id } = req.params;
         const transactions = await sql`
         SELECT * FROM transactions
-        WHERE user_id = ${user_id} ORDER BY created_at DESC
+        WHERE user_id = ${user_id}
+        ORDER BY updated_at DESC;
         `
     res.status(200).json({
         message: 'Transactions fetched successfully.',

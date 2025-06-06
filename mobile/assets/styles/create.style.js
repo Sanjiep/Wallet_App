@@ -111,9 +111,10 @@ export const styles = StyleSheet.create({
     marginHorizontal: 12,
   },
   input: {
+    fontWeight: "500",
     flex: 1,
     padding: 12,
-    fontSize: 16,
+    fontSize: 18,
     color: COLORS.text,
   },
   sectionTitle: {
