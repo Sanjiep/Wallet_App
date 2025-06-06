@@ -66,7 +66,7 @@ export const useTransactions = (userId) => {
     }
 
     return {
-        transactions,
+        transactions : transactions.transactions || [],
         summary,
         isLoading,
         loadData,

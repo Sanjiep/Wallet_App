@@ -130,7 +130,7 @@ export const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: "600",
     color: COLORS.text,
-    marginBottom: 15,
+    marginBottom: 5,
   },
   transactionCard: {
     backgroundColor: COLORS.card,
@@ -252,7 +252,7 @@ export const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
-    marginBottom: 10,
+    marginBottom: 5,
     paddingBottom: 5,
   },
   transactionsList: {

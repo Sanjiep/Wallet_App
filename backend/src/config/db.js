@@ -14,7 +14,8 @@ export async function connectToDatabase() {
         title VARCHAR(255) NOT NULL,
         amount DECIMAL(10, 2) NOT NULL,
         category VARCHAR(255) NOT NULL,
-        created_at DATE NOT NULL DEFAULT CURRENT_DATE
+        created_at DATE NOT NULL DEFAULT CURRENT_DATE,
+        updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
     )`;
         console.log('Database connected and table created successfully.');
     }

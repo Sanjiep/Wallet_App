@@ -23,6 +23,8 @@ export default function Page() {
   const [password, setPassword] = React.useState("");
   const [error, setError] = React.useState("");
 
+  if (!isLoaded) return null; 
+
   // Handle the submission of the sign-in form
   const onSignInPress = async () => {
     if (!isLoaded) return;
