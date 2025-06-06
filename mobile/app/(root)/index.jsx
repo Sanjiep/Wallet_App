@@ -10,6 +10,8 @@ import { SignOutButton } from "../../components/SignOutButton";
 import BalanceCard from "../../components/BalanceCard";
 import TransactionItem from "../../components/TransactionItem";
 import NoTransactionFound from "../../components/NoTransactionFound";
+import { getAvatarForUser } from '../../constants/avatars';
+
 
 export default function Page() {
   const router = useRouter();
@@ -49,7 +51,7 @@ export default function Page() {
           <View style={styles.headerLeft}>
             <Image
               style={styles.headerLogo}
-              source={require("../../assets/images/avatar.png")}
+              source={getAvatarForUser(user?.id)}
               resizeMode="contain"
             />
             <View style={styles.welcomeContainer}>
